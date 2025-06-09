@@ -28,10 +28,54 @@
 }
 
 .main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffe0ec 0%, #c2e9fb 100%);
+}
+
+.card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 40px 32px;
+  max-width: 350px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  align-items: center;
+  gap: 24px;
+}
+
+.texto {
+  text-align: center;
+}
+
+.imagem {
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.botoes {
+  display: flex;
+  gap: 16px;
+}
+
+.botoes button {
+  background: #ffb6c1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.botoes button:hover {
+  background: #ff69b4;
 }
 
 .main ol {
@@ -165,4 +209,61 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.fotoGaleria {
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+.audio {
+  margin: 16px 0 8px 0;
+  width: 100%;
+}
+
+.botoesPedido {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.sim {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sim:hover {
+  background: #388e3c;
+}
+
+.nao {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s, background 0.2s;
+  z-index: 1;
+  user-select: none;
+}
+.nao:hover {
+  background: #b71c1c;
 }
