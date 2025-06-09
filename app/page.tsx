@@ -7,6 +7,9 @@ import styles from "./page.module.css";
 const fotos = [
   "/images/IMG-20250608-WA0054.jpg",
   "/images/IMG-20250608-WA0056.jpg",
+  "/images/IMG-20250608-WA0057.jpg",  
+  "/images/IMG-20250608-WA0058.jpg",
+  "/images/IMG-20250608-WA0059.jpg",
 ];
 
 const paginas = [
@@ -14,17 +17,17 @@ const paginas = [
     texto: (
       <>
         {/* ESCREVA SUA HISTÓRIA AQUI */}
-        <h1 style={{ color: '#311d39' }}>A gente</h1>
+        <h1 style={{ color: '#311d39' }}>Nós!</h1>
         <p style={{ color: 'darkred' }}>
           {/* Conte aqui toda a história de vocês! Escreva o quanto quiser, este espaço é seu. */}
-          Nossa história é meio atípica, nos conhecemos no tinder, primeiro encontro é você me acompanhando para comprar roupa, um sorvete no big e uma prosa de um bom tempo.
-          Depois veio o carnaval, onde foi um pouco conturbado, a gente tentava se encontrar e toda hora perdia o sinal, ou um ia para um lado e o outro para a casa do chapéu.
-          Depois dessas loucuras, tivemos um momento de paz, uns rolês sozinhos, e o grande dia 24/02. Lembro até hoje do cara no carro me xingando por eu não ter te beijado KKKKKKKK, piada.
-          Naquele dia, eu tive a certeza que era você a pessoa certa para mim, que seu jeito, suas loucuras, seu sorriso, era o que eu queria ter para o resto da vida.
-          Eu tive a certeza que eu queria te chamar de amor, que a chance para o amor estava batendo na minha porta e eu não poderia abrir mão.
-          E desde esse momento, a cada dia que passa eu me apaixono mais por ti, eu entendo melhor o que é o amor, o que é dividir a vida com outra pessoa, o que é ser um pelo o outro o tempo todo.
-          Isadora, estar com você é sempre o melhor momento dos meus dias, mesmo quando estamos brigados, estamos de cara emburrada, ou somente sem ter o que falar um para o outro.
-          Eu amo sua companhia, amo o seu toque, amo sua voz, seus olhos, seu cabelo.. eu amo tudo em você, eu amo você!
+          Nossa história é um tanto diferente… Nos conhecemos no Tinder, e nosso primeiro encontro foi você me acompanhando para comprar roupa, depois tomamos um sorvete no Big e tivemos uma boa conversa, daquelas que a gente nem vê o tempo passar.
+          Depois veio o carnaval meio caótico, confesso. A gente tentava se encontrar, mas o sinal caía, um ia para um lado, o outro sumia no meio da multidão.
+          No meio dessas loucuras, conseguimos um pouco de paz: alguns rolês só nossos e, claro, o inesquecível dia 24/02. Nunca vou esquecer o cara no carro me xingando porque eu não te beijei — KKKK, foi bastante engraçado.
+          Naquele dia, eu soube. Tive a certeza de que era você a pessoa certa pra mim. Seu jeito, suas loucuras, seu sorriso… tudo em você me fez querer viver ao seu lado pra sempre.
+          Eu soube que queria te chamar de amor. Que o amor estava batendo na minha porta e eu não podia, de jeito nenhum, deixá-lo passar.
+          Desde então, a cada dia que passa, eu me apaixono mais por você. Entendo cada vez melhor o que é amar, o que é dividir a vida com alguém, o que é estar junto de verdade.
+          Isadora, estar com você é sempre o melhor momento dos meus dias. Mesmo quando brigamos, estamos de cara fechada ou em silêncio… só de estar ao seu lado, tudo faz sentido.
+          Eu amo sua companhia, amo seu toque, sua voz, seus olhos, seu cabelo… amo tudo em você. Eu amo você!
         </p>
       </>
     ),
@@ -35,8 +38,8 @@ const paginas = [
     texto: (
       <>
         {/* ESCOLHA SUAS FOTOS FAVORITAS */}
-        <h1 style={{ color: '#311d39' }}>Nossas Fotos</h1>
-        <p style={{ color: 'darkred' }}>Alguns dos nossos melhores momentos juntos:</p>
+        <h1 style={{ color: '#311d39' }}>Alguns dos nossos melhores momentos juntos:</h1>
+        <p style={{ color: 'darkred' }}>É impressionante como esse ano passou tão rápido, vivemos tantas coisas.</p>
       </>
     ),
     imagem: null,
@@ -61,9 +64,8 @@ export default function Home() {
   const [naoPos, setNaoPos] = useState(0);
   const router = useRouter();
 
-  // Função para mover o botão "Não"
   function moverBotaoNao() {
-    setNaoPos(Math.random() * 180 - 90); // Move entre -90px e +90px
+    setNaoPos(Math.random() * 180 - 90); 
   }
 
   return (

@@ -12,10 +12,10 @@ export default function SimPage() {
       <div className={styles.card}>
         <div className={styles.texto}>
           {/* ESCREVA SUAS DECLARAÇÕES AQUI */}
-          <h1 style={{ color: '#311d39' }}>Obrigado por fazer parte da minha vida. Que venham muitos momentos juntos!</h1>
+          <h1 style={{ color: '#311d39' }}>Obrigado por fazer parte da minha vida. Você é e sempre será a melhor decisão da minha vida!</h1>
           <p style={{ color: 'darkred' }}>
             {/* Escreva aqui mais declarações, agradecimentos, sonhos, etc. */}
-            Eu te amo infinitamente, só de imaginar viver sem você me dói! Obrigado por me dar a chance novamente de sermos felizes juntos!
+            Eu te amo infinitamente, só de imaginar viver sem você me dói! Espero que possamos continuar juntos e superar todas as adversidades que a vida nos apresentar.
           </p>
         </div>
         <div className={styles.galeria}>
