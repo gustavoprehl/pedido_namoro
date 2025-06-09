@@ -25,8 +25,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        {/* Player de áudio global, toca em todas as páginas */}
+        <audio controls autoPlay loop style={{ position: "fixed", bottom: 16, left: 16, zIndex: 9999 }}>
+          <source src="/music/Jorge & Mateus - Ai Já Era - [Novo DVD Live in London] - (Clipe Oficial).mp3" type="audio/mpeg" />
+          Seu navegador não suporta áudio.
+        </audio>
         {children}
       </body>
     </html>
   );
 }
+
+

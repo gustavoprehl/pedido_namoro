@@ -98,10 +98,7 @@ export default function Home() {
         {/* Página do pedido de namoro com música e botões interativos */}
         {paginas[pagina].pedido && (
           <>
-            <audio controls autoPlay loop className={styles.audio}>
-              <source src="/music/Jorge & Mateus - Ai Já Era - [Novo DVD Live in London] - (Clipe Oficial).mp3" type="audio/mpeg" />
-              Seu navegador não suporta áudio.
-            </audio>
+            {/* Removido o player de áudio daqui, pois agora está global */}
             <div className={styles.botoesPedido}>
               <button
                 className={styles.sim}
